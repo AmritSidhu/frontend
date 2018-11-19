@@ -12,6 +12,13 @@ def index():
     )
 
 
+@main.route('/api')
+def api_test():
+    return render_template(
+        'views/api.html'
+    )
+
+
 @main.route('/speakers')
 @requires_auth
 def speakers():
