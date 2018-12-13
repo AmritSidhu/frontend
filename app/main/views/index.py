@@ -12,6 +12,13 @@ def index():
     )
 
 
+@main.route('/new_home')
+def index1():
+    return render_template(
+        'views/home1.html'
+    )
+
+
 @main.route('/api')
 def api_test():
     return render_template(
